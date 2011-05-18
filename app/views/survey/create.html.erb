@@ -1,0 +1,11 @@
+<h1>Create Surveys</h1>
+
+<%= form_tag :controller=>"survey", :action=>'create_survey' %>
+Survey name:
+<%= text_field("surveyform", "surveyname",:size=>"20" ) %>
+Survey Type:
+  <%= select("surveyform", "surveytype", [['research','reserch'],['Business','business'],['People','people']]) %>
+
+<input type="submit" value=" Create " />
+
+
